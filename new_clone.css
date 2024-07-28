@@ -1,0 +1,523 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+		
+		@media (max-width: 768px) {
+		.container .navbar-toggler .nav-item .nav-link{
+		background-color:green;
+		color:white;
+		
+		}
+		}
+		
+		.navbar-toggler-icon {
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%2872, 184, 49, 0.8%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+        
+		}
+
+        .navbar-nav .nav-link {
+            color: black; /* Menu link color */
+            transition: color 0.3s;
+			font-weight: 500;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: green; /* Menu link hover color */
+        }
+		
+		
+		
+		/* Slider */
+		
+		/* Add this to your existing CSS */
+.carousel-container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+#myCarousel {
+  width: 100%;
+}
+.carousel-item {
+            height: 400px;
+            position: relative;
+            background-color: #f0f0f0;
+			
+			
+        }
+        .carousel-caption {
+            position: absolute;
+            top: 40%;
+            transform: translateY(-50%);
+            text-align: left;
+        }
+        .carousel-caption span {
+            display: block;
+            color: black;
+			font-size:30px;
+        }
+        .carousel-caption h1 {
+            display: block;
+            color: green;
+            font-weight: bold;
+
+        }
+        .carousel-caption p {
+            color: black;
+			padding-right:150px;
+			
+        }
+        .carousel-caption .btn {
+            margin-right: 10px;
+            background-color: black;
+            color: white;
+            border: none;
+        }
+        .carousel-caption .btn:hover {
+            background-color: green;
+            color: white;
+        }
+        @media (max-width: 768px) {
+			
+			
+            .carousel-caption {
+                position: static;
+                transform: none;
+                text-align: center;
+				top: 10%;
+				
+            }
+			
+			.carousel-caption p {
+            color: black;
+			padding-right:30px;
+			padding-left:30px;
+			
+        }
+            .carousel-item img {
+                display: none !important;
+            }
+        }
+		
+		/* About Us */
+		.about-section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 50px;
+            background-color: #f8f9fa;
+            border-radius: 10px;
+			box-shadow: 0 0 10px 8px rgba(0,0,0,0.08);
+			margin-right: 50px;
+			margin-left: 50px;
+        }
+        .about-text {
+            max-width: 50%;
+        }
+        .about-text h2 {
+            background-color: #43960f;
+            color: white;
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+        .about-text p {
+            margin-top: 20px;
+            color: #333;
+        }
+        .about-text .btn {
+            margin-top: 20px;
+            background-color: black;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+        .about-image img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+		
+		.number-circle {display:none;
+}
+        @media (max-width: 768px) {
+            .about-section {
+                flex-direction: column;
+                text-align: center;
+            }
+            .about-text {
+                max-width: 100%;
+                margin-bottom: 20px;
+			
+            }
+        }
+		
+		/* Fresh Vegetable */
+		.fresh-vegetable-section h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.fresh-vegetable-section h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.fresh-vegetable-section p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+	margin-top:20px;
+}
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.image-wrapper {
+    position: relative;
+}
+
+.image-wrapper img {
+    border-radius: 10px;
+	
+}
+
+.image-wrapper .img1 img {
+
+    position: relative; /* Set relative positioning for the first image */
+    
+   width:100%
+    
+	
+}
+
+.image-wrapper .img2 img {
+ position: relative;
+margin-top:-50px;
+}
+
+.number-circle {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #43960f;
+    color: white;
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .fresh-vegetable-section .row {
+        flex-direction: column;
+    }
+    .image-container {
+        align-items: center;
+		width:100%;
+		hight:auto;
+    }
+	.image-wrapper img {
+    border-radius: 10px;
+
+	}
+	
+	.image-wrapper .img2 img {
+ position: relative;
+margin-top:10px;
+}
+}
+
+
+
+
+/* Testimonial */
+.bg-image {
+    background-image: url('test.jpg'); /* Replace with your background image */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: white;
+}
+
+.text-top {
+    position: absolute;
+    top: -20px; /* Adjust as needed */
+    right: 40px; /* Adjust as needed */
+    background: rgba(255, 255, 255, 0.7); /* Optional: Add a background for better readability */
+    padding: 10px; /* Optional: Add padding for better readability */
+    border-radius: 5px; /* Optional: Add rounded corners */
+}
+
+.test {
+    color: black;
+	font-size: 2.5rem;
+	font-weight: bold;
+}
+.carousel-content {
+    background-color: #428713cc;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.carousel-image {
+flex: 0 0 auto;
+    margin-right: 20px;
+	position:relative;
+}
+
+.carousel-image img {
+    border: 20px solid #ffffff;
+    border-radius: 10px;
+}
+
+
+@media (max-width: 768px){.carousel-content {
+    
+padding: 80px;	}
+}
+	
+
+
+
+/* Contact Us */
+
+.contact {
+padding-bottom: 90px;
+background-size: cover;
+background: url(../images/banner2.png);
+background-size: cover;
+background-repeat: no-repeat;
+background-size: 100%;
+
+
+}
+.contact_bg .titlepage {padding-bottom: 20px; text-align: right !important; padding-right: 10px;}
+#map {
+    height: 100%;
+    min-height: 470px;
+	
+}
+
+.white_color {background: #fff; box-shadow: 0px 0px 11px 0px;}
+.map figure {margin: 0px;}
+.map figure img {width: 100%;}
+
+ .white_bg {
+     background-color: #fff;
+     padding: 40px 30px 30px 30px; 
+}
+ .contact .titlepage {
+     text-align: center;
+	 
+}
+
+.contact .titlepage h2 {
+font-size: 2.5rem;
+font-weight: bold;
+padding: 40px 30px 30px 30px;
+}
+
+
+
+ .contact .titlepage h3 {
+     padding: 0px 0px 6px 0px;
+     text-transform: uppercase;
+     font-weight: bold;
+     color: #fff;
+     line-height: 46px;
+     border-bottom: #fff solid 1px;
+     font-size: 40px;
+     width: 367px;
+     margin: 0 auto;
+     margin-bottom: 60px;
+	 
+}
+ .contact .contact_bg {
+    max-width: 541px;
+    
+     padding: 0;
+     padding: 60px 0px;
+}
+ .contact .contact_bg .contactus {
+     border: #e8e8e8 solid 1px;
+     padding: 12px 19px;
+     margin-bottom: 26px;
+      border-radius: 1px;
+     color: #000;
+     width: 100%;
+}
+ .contact .contact_bg .textarea {
+     margin-bottom: 25px;
+         padding: 29px 19px;
+     color: #000 !important;
+     width: 100%;
+         border: #e8e8e8 solid 1px;
+    border-radius: 1px;
+        padding-top: 50px;
+}
+ .contact .contact_bg .send {
+     font-size: 16px;
+     border: #428713 solid 1px;
+     background-color: #428713;
+     color: #fff;
+     padding: 11px 67px;
+     float: right;
+     transition: all 0.3s ease-in;
+}
+ .contact .contact_bg .send:hover {
+     background-color: #ff7e1d;
+border: #ff7e1d solid 1px;
+color: #fff;
+transition: all 0.3s ease-in;
+
+}
+/** end contact section **/
+
+
+/** footer **/
+ .footer {
+     background: #3b3b3b;
+   
+     padding-top: 60px;
+}
+
+.logo_footer {
+border: #ddd solid 2px;
+padding: 11px 50px;
+display: inline-block;
+margin-bottom: 30px;
+background-color: white;
+}
+ .footer .address h3 {
+     color: #fff;
+font-size: 30px;
+line-height: 35px;
+font-weight: bold;
+padding-bottom: 20px;
+text-align:left;
+}
+
+
+
+.address ul.loca li{
+    text-align: left; /* Left-align the address content */
+}
+
+ .location_section {
+     background-color: #fff;
+     margin-bottom: 40px;
+     border-radius: 10px;
+     padding: 20px 35px;
+}
+ 
+ .news .newslatter {
+     padding: 7px 23px;
+box-shadow: inherit;
+border: inherit;
+width: 100%;
+font-size: 19px;
+
+margin-bottom: 20px;
+}
+ .submit {
+    padding: 9px 0;
+
+background: #428713;
+color: #fff;
+margin-left: -5px;
+font-weight: 500;
+font-size: 18px;
+max-width: 170px;
+width: 100%;
+border-radius: 30px;
+text-transform: uppercase;
+transition: all 0.3s ease-in;
+}
+ .submit:hover {
+     background: #ff7e1d;
+     
+     color: #fff;
+     transition: all 0.3s ease-in;
+
+}
+ ul.social_link {
+    padding-bottom: 35px;
+     padding-top: 7px;
+     display: block;
+}
+ ul.social_link li {
+    display: inline-block;
+     padding-right: 0px;
+
+}
+ 
+ ul.social_link li a img {
+    width: 30px;
+     height: 30px;
+}
+ ul.social_link li a img:hover {
+     background-color: #f4b328 ;
+     border-radius: 20px;
+}
+ ul.Menu_footer li{
+
+     display: block;
+     color: #3e7f21;
+
+}
+
+ 
+
+ ul.Menu_footer li a {
+     display: block;
+     color: #fcfbfb;
+     font-size: 17px;
+   
+    
+}
+ ul.Menu_footer li a:hover{
+     color: #f4b328 ;
+}
+ 
+
+ ul.loca li {
+     color: #fcfbfb;
+     display: flex;
+     font-size: 16px;
+     flex-wrap: wrap;
+}
+ ul.loca li a {
+     color: #fcfbfb;
+     margin-top: 4px;
+}
+ .copyright {
+     padding: 20px 0px;
+     margin-top: 55px;
+     background-color: #428713;
+}
+ .copyright p {
+     color: #fff;
+     font-size: 18px;
+     line-height: 22px;
+     text-align: center;
+   
+}
+ .copyright a {
+     color: #fff;
+}
+ .copyright a:hover {
+     color: #ff7e1d ;
+}
+/** end footer **/
